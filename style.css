@@ -1,0 +1,65 @@
+body{
+  background: linear-gradient(270deg, rgba(255,212,126,1) 0%, rgba(255,151,77,1) 53%);
+  margin: 0;
+  padding: 5% 10%;
+  box-sizing: border-box;
+  height: 100vh;
+}
+form{
+  background: linear-gradient(90deg, rgba(115,240,255,1) 0%, rgba(77,255,238,1) 64%);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 5% 8%;
+  text-align: center;
+  border-radius: 50px;
+}
+ul{
+  text-align: left;
+  margin-top: 50px;
+}
+li{
+  list-style: none;
+  position: relative;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+li:hover{
+  transform: scale(101%);
+}
+li::before{
+  content: "*";
+  position: absolute;
+  top: 60%;
+  left: -10px;
+  transform: translate(-50%, -50%);
+}
+li::after{
+  content: "(terminer)";
+  color: orange;
+  position: absolute;
+  top: 50%;
+  right: -2px;
+  transform: translate(-50%, -50%);
+}
+h1{
+  text-transform: uppercase;
+}
+input[type="text"]{
+  outline: none;
+  background: linear-gradient(270deg, rgba(255,212,126,1) 0%, rgba(255,151,77,1) 53%);
+  padding: 15px 25px;
+  border: 3px solid rgb(233, 210, 4);
+  border-radius: 50px;
+  font-size: 1rem;
+  color: rgb(0, 213, 0);
+}
+input[type="text"]::placeholder{
+  color: rgb(0, 213, 0);
+}
+input[type="text"]:focus{
+  background: linear-gradient(90deg, rgba(255,212,126,1) 0%, rgba(255,151,77,1) 53%);
+  border: 3px solid rgb(6, 201, 71);
+}
