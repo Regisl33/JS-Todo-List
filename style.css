@@ -31,18 +31,27 @@ li:hover{
 }
 li::before{
   content: "*";
+  color: orange;
   position: absolute;
   top: 60%;
   left: -10px;
   transform: translate(-50%, -50%);
 }
+.active::before{
+  color: green;
+  content: "#";
+}
 li::after{
-  content: "(terminer)";
+  content: "(terminer), (clicker pour supprimer)";
   color: orange;
   position: absolute;
   top: 50%;
   right: -2px;
   transform: translate(-50%, -50%);
+  opacity: 0;
+}
+.active::after{
+  opacity: 1;
 }
 h1{
   text-transform: uppercase;
